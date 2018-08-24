@@ -27,7 +27,7 @@ var www = 'https://zh.44api.com/'/*您的网站域名*/
 var bucketcdn = "https://img.44api.com/upload/"/*您的图片及视频存放地址
 ```
 ##ysphp配置
-请登录http://您的域名/admin/op  点击微信小程序，填写APPID与APPsercret点击【保存配置】
+请登录http://  您的域名 /admin/op  点击微信小程序，填写APPID与APPsercret点击【保存配置】
 ![配置](./ysphp.jpg)  
 ###参数获取
 APPID与APPsercret在微信公众平台获取    
