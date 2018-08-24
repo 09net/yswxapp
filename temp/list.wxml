@@ -1,0 +1,39 @@
+<template name="list">
+ <navigator url="/pages/look/index?id={{itemName['id']}}" hover-class="navigator-hover">
+<view class="h2">{{itemName['title']}}</view></navigator>
+<view wx:if="{{itemName['vs']}}">
+<view class="section tc">
+<navigator url="/pages/look/index?id={{itemName['id']}}" hover-class="navigator-hover"><image style="background-color: #eeeeee;" src="{{itemName['vs']}}?x-oss-process=video/snapshot,t_1000,w_160,h_120,f_jpg,m_fast" mode="widthFix"></image>
+<view class="video"><text class='fa fa-play'></text></view>
+</navigator></view></view>
+<view wx:for="{{itemName['img']}}" wx:key="{{itemkey2}}" wx:for-item="item2">
+<template is="image" data="{{item2}}"></template>
+</view>
+<view class='item'>{{itemName['user']}}<view class='r'>{{itemName['btime']}}</view></view>
+</template>
+
+<template name="list-none">
+ <navigator url="/pages/look/index?id={{itemName['id']}}" hover-class="navigator-hover">
+<view class="h2">{{itemName['title']}}</view></navigator>
+<view wx:if="{{itemName['vs']}}">
+<view class="section tc">
+<navigator url="/pages/look/index?id={{itemName['id']}}" hover-class="navigator-hover"><image style="background-color: #eeeeee;" src="{{itemName['vs']}}?x-oss-process=video/snapshot,t_1000,w_160,h_120,f_jpg,m_fast" mode="widthFix"></image>
+<view class="video"><text class='fa fa-play'></text></view>
+</navigator></view></view>
+<view wx:for="{{itemName['img']}}" wx:key="{{itemkey2}}" wx:for-item="item2">
+<template is="image-none" data="{{item2}}"></template>
+</view>
+<view class='item'>{{itemName['user']}}<view class='r'>{{itemName['btime']}}</view></view>
+</template>
+
+
+<template name="image">
+<view wx:if="{{item2}}">
+<image lazy-load="true" style="background-color: #eeeeee;" src="{{item2}}" mode="widthFix"></image>
+</view>
+</template>
+<template name="image-none">
+<view wx:if="{{item2}}">
+<image lazy-load="true" style="background-color: #eeeeee;" src="/pages/img/none.png" mode="widthFix"></image>
+</view>
+</template>

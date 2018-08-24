@@ -1,0 +1,42 @@
+
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="ss fixed">
+<view class="rowdiv">
+<view class="g-3"><button bindtap="goods" class="fa fa-thumbs-up {{vote=='goods' ? 'red' : ''}}"><view>{{tdata['goods']}}</view></button></view>
+<view class="g-3"><button bindtap="nos" class="fa fa-thumbs-down {{vote=='nos'  ? 'red' : ''}}"><view>{{tdata['nos']}}</view></button></view>
+<view class="g-3"><button bindtap="fav" class="fa fa-heart {{fav ? 'red' : ''}}"><view>收藏</view></button></view>
+<view class="g-3"><button open-type="share" class="fa fa-share-alt"><view>分享</view></button></view>
+</view>
+</view>
+
+
+<view id="mulu">
+<view wx:if="{{tdata['vs']}}">
+<view class="section tc">
+  <video src="{{tdata['vs']}}"   controls="true" autoplay="true" ></video>
+</view>
+</view>
+<view class="h1">{{tdata['title']}}</view>
+<view class='item'>{{tdata['user']}}<view class='r'>{{tdata['btime']}}</view></view>
+<view id="content">
+ <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+</view>
+<view id="files" wx:if="{{files}}">
+<view wx:for="{{files}}" wx:key="{{filekey}}" wx:for-item="fileName" class='mulu'>
+<button class="fa fa-download" bindtap='downfile' data-id="{{fileName['id']}}">{{fileName['filename']}}.{{fileName['ext']}}</button>
+
+</view>
+</view>
+<view id="postlist">
+<view wx:if="{{tdata['posts']>0}}" class="red">评论[{{tdata['posts']}}]</view>
+<view wx:for="{{PostList}}" wx:key="{{itemkey}}" wx:for-item="itemName" class='mulu'>
+<view>{{itemName['user']}}<view class='r'>{{itemName['btime']}}</view></view>
+<text decode="true" space="ensp" class='PostList'>{{itemName['content']}}</text>
+
+</view>
+<button  wx:if="{{over==false}}" bindtap='addpl'> 加载评论 </button>
+<button  wx:if="{{over}}"> 评论加载完毕 </button>
+</view>
+<view><button class='bj_green' bindtap='home'>首页</button></view>
+
+</view>

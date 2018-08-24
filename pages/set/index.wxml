@@ -1,0 +1,51 @@
+<view class="container" id="mulu">
+<view class="avatar">
+  <text>头像</text>
+  <view class="real">
+    <image class="a" src="{{userinfo['avatarUrl']}}"/>
+  </view>
+</view>
+<view class="nickName">
+  <text>名字</text>
+  <view class="real">{{userinfo['nickName']}}</view>
+</view>
+<view class="nickName">
+  <text>非WIFI网络流量</text>
+  <view class="real"><switch checked="{{imagebool}}" bindchange="imagebool"/></view>
+</view>
+<view class="rowdiv ss">
+<view class="g-4"><button class='fa fa-calendar' bindtap='qiandao'><view>{{qiandao}}</view></button></view>
+<navigator url="/pages/post/index" class="g-4"><button class='fa fa-edit red'><view>投稿</view></button></navigator>
+<view class="g-4"><navigator url="/pages/index/index?mode=2"><button class="fa fa-download"><view>下载</view></button></navigator></view>
+</view>
+<view class="rowdiv ss">
+<navigator url="/pages/fav/index" class="g-4"><button class='fa fa-low-vision'><view>历史</view></button></navigator>
+<navigator url="/pages/fav/index?id=fav" class="g-4"><button class='fa fa-heart'><view>收藏</view></button></navigator>
+<view class="g-4"><button open-type="share" class="fa fa-share-alt"><view>分享</view></button></view>
+</view>
+<view class="nickName">
+  <text>金币</text>
+  <view class="real">{{userinfo['gold']}}</view>
+</view>
+<view class="nickName">
+  <button class='red' open-type="{{userinfo['gold']>38887 ? 'contact':''}}" bindtap="tixian"> 兑换100元红包(38888金币)</button></view>
+<view class="nickName">
+  <text>积分</text>
+  <view class="real">{{userinfo['credits']}}</view>
+</view>
+<view class="area">
+  <text>地址</text>
+  <view class="real">{{userinfo['province']}}省{{userinfo['city']}}市</view>
+</view>
+<view class="signature">
+ <text>每日签到惊喜不断：最高5000元大奖拿不停</text>
+</view>
+</view>
+<view class="ss fixed">
+<view class="rowdiv">
+<view class="g-3"><button  class="fa fa-institution" bindtap='home'><view>首页</view></button></view>
+<view class="g-3"><button class="fa fa-weixin" open-type="contact"><view>客服</view></button></view>
+<view class="g-3"><button open-type="getUserInfo" class='fa fa-user-plus  red' bindgetuserinfo='bindGetUserInfo' wx:if="{{loginbool}}"><view>登录</view></button><button class="fa fa-user-times  red" wx:if="{{loginbool==false}}" bindtap='out'><view>退出</view></button></view>
+<view class="g-3"><button class="fa fa-user-circle red"><view>我的</view></button></view>
+</view>
+</view>

@@ -1,0 +1,40 @@
+.video{
+  position: absolute;
+    left: 150px;
+    bottom: 100px;
+    font-size: 70px;
+    color: #fff;
+
+}
+.tc {position: relative}
+video{min-height: 230px;}
+.red{color: red}
+.files{ color:#0066FF;font-size: 18px; padding-left: 10px;}
+.PostList{padding: 5px; color:#666666}
+.h1{ font-size: 18px; padding:10px;text-align: center; color: black}
+.h2{ font-size: 16px; padding:5px;font-weight: 700;color: black}
+.mulu button ,.mulu navigator{display:block; line-height:30px; text-align: left;color:#0066FF;border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none; font-size: 14px;}
+#mulu {margin-bottom: 60px}
+
+.mulu{border-bottom: thin solid #666666; padding-bottom:5px; padding-top: 5px;  }
+
+.mulu .jie{padding-left:10px}
+.mulu .zhang{font-weight:bold;}
+.mulu .jieshi{font-weight:bold;}
+.highlight {background-color:yellow; color:#FF0000;font-weight:bold;} 
+.fixed{position: fixed;opacity:1;bottom:0; z-index: 999;}
+.ss{ width:100%;height: 50px;  line-height:50px; overflow: hidden}
+.ss button{ height:50px;width:100%; background-color:#FFFFFF;line-height:20px; overflow: hidden; font-size: 14px; padding: 8px;}
+.rowdiv{position: relative;border-collapse: separate;width: 100%; line-height:50px; overflow: hidden}
+.rowdiv .g-4{float: left;width:33%;}.rowdiv .g-3{float: left;width: 25%;}.rowdiv .g-6{float: left;width: 49%;}.rowdiv .g-1{float: left;width: 8.3%;}.rowdiv .g-7{float: left;width: 58%;}.rowdiv .g-2{float: left;width: 16.6%;}.rowdiv .g-8{float: left;width: 490rpx;}
+#content{ font-size:14px; margin-left:10px; margin-right:10px; margin-top:10px; background-color:#FFFFFF;padding: 10px; line-height: 30px}
+#mulu{padding: 10px; background-color:#FFFFFF }
+page {  
+background-color:#CCCCCC;
+} 
+.item{color:#666666;font-size:12px}
+.r{float: right; padding-right: 20px}
+image{margin-bottom: 5px;}

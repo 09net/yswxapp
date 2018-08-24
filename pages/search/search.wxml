@@ -1,0 +1,8 @@
+<import src="../../temp/list.wxml"/>
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="lower" id="mulu" lower-threshold="50" upper-threshold="50" scroll-top="{{scrollTop}}">
+<include src="../../wxSearchView/wxSearchView.wxml" />
+<view wx:for="{{mulu}}" wx:key="{{itemkey}}" wx:for-item="itemName" class='mulu'>
+<template is="{{(networkType=='wifi' || imagebool) ? 'list':'list-none' }}" data="{{itemName}}"></template>
+</view>
+<button  wx:if="{{over}}"> 加载完毕 </button>
+</scroll-view>

@@ -1,0 +1,24 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/post/index",
+    "pages/down/index",
+    "pages/look/index",
+    "pages/set/index",
+    "pages/logs/logs",
+      "pages/fav/index"
+  ],
+  "window":{
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0066FF",
+    "backgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "内涵GIF笑话"
+  },
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.1.6",
+      "provider": "wxa75efa648b60994b"
+    }
+  }
+}

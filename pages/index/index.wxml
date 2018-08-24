@@ -1,0 +1,40 @@
+<import src="../../temp/list.wxml"/>
+<view class="ss fixed">
+<view class="rowdiv">
+<view class="g-3"><button bindtap="mode0" class="fa fa-institution {{mode==0 ? 'red' : ''}}"><view>首页</view></button></view>
+<view class="g-3"><button bindtap="mode1" class="fa fa-image {{mode==1 ? 'red' : ''}}"><view>图片</view></button></view>
+<view class="g-3"><button bindtap="mode3" class="fa fa-toggle-right {{mode==3 ? 'red' : ''}}"><view>视频</view></button></view>
+<view class="g-3"><button bindtap="more" class="fa fa-user-circle {{mode=='my' ? 'red' : ''}}"><view>我的</view></button></view>
+</view>
+</view>
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" id="mulu" lower-threshold="50" upper-threshold="50" scroll-top="{{scrollTop}}" bindscroll="scroll">
+<view wx:if="{{isConnected}}">网络已断开</view>
+<view class="weui-search-bar">
+   <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
+      <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
+         <text data-key='search'>搜索</text>
+         
+     </view>
+</view>
+
+<view wx:for="{{mulu}}" wx:key="{{itemkey}}" wx:for-item="itemName" class='mulu'>
+<template is="{{(networkType=='wifi' || imagebool) ? 'list':'list-none' }}" data="{{itemName}}"></template>
+</view>
+<button  wx:if="{{loading}}"> 加载中 </button>
+<button  wx:if="{{over}}"> 加载完毕 </button>
+
+<view class="com-widget-goTop" bindtap="goTop" wx:if="{{floorstatus}}">
+          <view class="icon-gotop">
+              顶部
+          </view>
+    </view>
+
+</scroll-view>

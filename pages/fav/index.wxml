@@ -1,0 +1,16 @@
+<import src="../../temp/list.wxml"/>
+<view class="ss fixed">
+<view class="rowdiv">
+<view class="g-3"><navigator url="/pages/index/index" hover-class="navigator-hover"><button class="fa fa-institution"><view>首页</view></button></navigator></view>
+<view class="g-3"><button bindtap="fav" class="fa fa-heart {{mode=='fav' ? 'red' : ''}}"><view>收藏</view></button></view>
+<view class="g-3"><button bindtap="look" class="fa fa-low-vision {{mode=='look' ? 'red' : ''}}"><view>历史</view></button></view>
+<view class="g-3"><button bindtap="more" class="fa fa-user-circle {{mode=='my' ? 'red' : ''}}"><view>我的</view></button></view>
+</view>
+</view>
+<view id="mulu">
+<view wx:for="{{mulu}}" wx:key="{{itemkey}}" wx:for-item="itemName" class='mulu'>
+
+<template is="{{(networkType=='wifi' || imagebool) ? 'list':'list-none' }}" data="{{itemName}}"></template>
+</view>
+<button> 加载完毕 </button>
+</view>

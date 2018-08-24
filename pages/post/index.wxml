@@ -1,0 +1,27 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="container" id="mulu">
+  <input placeholder="标题" auto-focus confirm-type="done" name="title" class='title' />
+<view  class="content">
+  <textarea auto-height placeholder="内容" confirm-type="done" name="content" maxlength="5000" />
+</view>
+<view wx:if="{{vs}}">
+  <video src="{{vs}}"   controls="true" ></video>
+</view>
+<view class="rowdiv">
+<view wx:for="{{img}}" wx:key="{{itemkey2}}" wx:for-item="item2" class="g-6">
+<image style="background-color: #eeeeee;" src="{{item2['url']}}" mode="aspectFit" ></image>
+</view> 
+</view>
+
+<view class="ss">
+<view class="rowdiv">
+<view class="g-6"><button bindtap='upimg'  class='fa fa-image'><view>图片</view></button>  </view>
+<view class="g-6"><button bindtap='upvod' class='fa fa-toggle-right'><view>视频</view></button>  </view>  </view> </view> 
+<view>投稿需要管理员审核后才会显示，投稿一经采用金币+100，还有机会中5000元大奖</view>
+
+</view>
+<view class="ss fixed">
+<view class="rowdiv">
+<view class="g-6"><button formType="submit"  class='fa fa-edit'><view>投稿</view></button>  </view>
+<view class="g-6"><button formType="reset" class='fa fa-undo'><view>重置</view></button>  </view>  </view>  </view>
+</form>
