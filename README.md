@@ -27,24 +27,17 @@ var www = 'https://zh.44api.com/'/*您的网站域名*/
 var bucketcdn = "https://img.44api.com/upload/"/*您的图片及视频存放地址
 ```
 ###ysphp配置
->请登录http://您的域名/admin/op
-
->![配置](./ysphp.jpg)
->点击微信小程序，填写APPID与APPsercret点击【保存配置】
+>请登录http://您的域名/admin/op  点击微信小程序，填写APPID与APPsercret点击【保存配置】
+[配置](./ysphp.jpg)  
 ###参数获取
->APPID与APPsercret在微信公众平台获取
->![配置](./mp.jpg)
+>APPID与APPsercret在微信公众平台获取    
+[配置](./mp.jpg)
 ##官方示例
-> 目前唯一的官方示例是：**内涵gif笑话**
->![二维码](./2wm.jpg)
->请扫描上方二维码进行效果查看
+> 目前唯一的官方示例是：**内涵gif笑话**  请扫描下方二维码进行效果查看
+[二维码](./2wm.jpg)   
+
 
 ## 关于收费
-
 **YSwxapp**免费给非商业用户使用，用于商业目的请[购买](maxiang.info/vip.html)才能继续使用。未购买一经发现将赔偿**100**倍购买费用。
-
-
 ## 反馈与建议
 - 邮箱：<719048503@qq.com>
-
-
