@@ -29,14 +29,15 @@ var bucketcdn = "https://img.44api.com/upload/"/*您的图片及视频存放地�
 ###ysphp配置
 >请登录http://您的域名/admin/op
 
-![配置](./ysphp.jpg)
--点击微信小程序，填写APPID与APPsercret点击【保存配置】
+>![配置](./ysphp.jpg)
+>点击微信小程序，填写APPID与APPsercret点击【保存配置】
 ###参数获取
 >APPID与APPsercret在微信公众平台获取
-![配置](./mp.jpg)
+>![配置](./mp.jpg)
 ##官方示例
-> 目前唯一的官方示例是：**内涵gif笑话**![二维码](./2wm.jpg)
--请扫描上方二维码进行效果查看
+> 目前唯一的官方示例是：**内涵gif笑话**
+>![二维码](./2wm.jpg)
+>请扫描上方二维码进行效果查看
 
 ## 关于收费
 
