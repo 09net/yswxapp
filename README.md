@@ -41,3 +41,5 @@ APPID与APPsercret在微信公众平台获取
 **YSwxapp**免费给非商业用户使用，用于商业目的请[购买](http://zh.44api.com)才能继续使用。未购买一经发现将赔偿**100**倍购买费用。
 ## 反馈与建议
 - 邮箱：<719048503@qq.com>
+-[ysphp官方论坛](http://zh.44api.com/f/12.html)
+-[yswxapp官方论坛](http://zh.44api.com/f/12.html)
