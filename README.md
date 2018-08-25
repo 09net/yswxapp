@@ -42,4 +42,4 @@ APPID与APPsercret在微信公众平台获取
 ## 反馈与建议
 - 邮箱：<719048503@qq.com>
 - [ysphp官方论坛](http://zh.44api.com/f/12.html)
-- [yswxapp官方论坛](http://zh.44api.com/f/12.html)
+- [yswxapp官方论坛](http://zh.44api.com/f/13.html)
